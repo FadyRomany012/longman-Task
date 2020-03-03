@@ -213,4 +213,54 @@ cursor: pointer;
       position: relative
     }    
   }
+/* Change the order of the indicators. 
+   Return them to the center of the slide. */
+   .carousel-indicators {
+    width: auto !important;
+    margin-left: 0 !important;
+    transform: translateX(-50%) !important;
+  }
+  .carousel-indicators li {
+    float: right !important;
+    margin: 1px 4px !important;
+  }
+  .carousel-indicators .active {
+    margin: 0 3px !important;
+  }
   
+  /* Change the direction of the transition. */
+  @media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner > .item.next,
+    .carousel-inner > .item.active.right {
+      left: 0 !important;
+      -webkit-transform: translate3d(-100%, 0, 0) !important;
+      transform: translate3d(-100%, 0, 0) !important;
+    }
+    .carousel-inner > .item.prev,
+    .carousel-inner > .item.active.left {
+      left: 0 !important;
+      -webkit-transform: translate3d(100%, 0, 0) !important;
+      transform: translate3d(100%, 0, 0) !important;
+    }
+  }
+
+  #session1 {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+  #session2 {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+  #session3 {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+#session4 {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+#session5 {
+  padding-top: 60px;
+  margin-top: -60px;
+}
